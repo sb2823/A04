@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Password</title></head>
+ 
+
+<body>
+
+<label><b>Click on the password to show and hide the password:</b></label></br>
+<label><b>Password</b></label>
+
+<input id="myInput" type="password" onclick="changeTheColor()" style="background-color: pink;">
+
+<script>
+
+  function changeTheColor() {
+    
+    if (document.getElementById("myInput").value != "") {
+
+
+    if (document.getElementById("myInput").type == "password") {
+      document.getElementById("myInput").type = "text";
+      document.getElementById("myInput").style.background = "lightblue";
+      
+
+    }
+     else if (document.getElementById("myInput").type == "text") {
+      document.getElementById("myInput").type = "password";
+      document.getElementById("myInput").style.background = "pink";
+      
+    }
+  }
+  }
+
+    </script>
+    </body>
+</html>
