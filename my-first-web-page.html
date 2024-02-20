@@ -1,36 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Password</title></head>
- 
-
-<body>
-
-<label><b>Click on the password to show and hide the password:</b></label></br>
-<label><b>Password</b></label>
-
-<input id="myInput" type="password" onclick="changeTheColor()" style="background-color: pink;">
-
-<script>
-
-  function changeTheColor() {
-    
-    if (document.getElementById("myInput").value != "") {
-
-
-    if (document.getElementById("myInput").type == "password") {
-      document.getElementById("myInput").type = "text";
-      document.getElementById("myInput").style.background = "lightblue";
-      
-
-    }
-     else if (document.getElementById("myInput").type == "text") {
-      document.getElementById("myInput").type = "password";
-      document.getElementById("myInput").style.background = "pink";
-      
-    }
-  }
-  }
-
-    </script>
-    </body>
+  <head>
+    <title>my-first-web-page.html</title>
+    <style>
+      div {
+        background-color: rgb(246, 186, 222);
+        width: 40%;
+        border: 15px solid rgb(236, 86, 196);
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Name: Sadia Barlas</h2>
+      <h2>Course Number: 117</h2>
+      <h2>Course Section: 006</h2>
+    </div>
+  </body>
 </html>
